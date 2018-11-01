@@ -26,19 +26,20 @@ Time spent: **8** hours spent in total
  - <img src='user.gif' title='User enumeration' width='' alt='' /> 
 - [x] Steps to recreate:
  - Go to the WordPress login page, first, check the input for admin with empty password,
-   then it shows the error because the password is empty.Second, when you input admin as    username, and put password randomly.It shows the password for admin is incorrect. When   you put other name (ex.user), and random password, it shows error. 
-- [ ] Affected source code:
+   then it shows the error because the password is empty.Second, when you input admin as    username, and put password randomly.It shows the password for admin is incorrect. When you put other name (ex.user), and random password, it shows error. 
+- [x] Affected source code:
 - [Link 2](https://www.wpwhitesecurity.com/wordpress-security/wordpress-username-disclosure-vulnerability/)
-1. (Required) Vulnerability Name or ID
-- [ ] Summary: 
-- Vulnerability types:
-- Tested in version:
+1. (Required) Vulnerability Name or ID: Authenticated Stored Cross-Site Scripting via Image Filename
+- [x] Summary: This vulnerablility will remote attackers to create a crafted image file name that will inject arbitrary web script. 
+- Vulnerability types: XSS
+- Tested in version: 4.2
 - Fixed in version: 
-- [ ] GIF Walkthrough: 
+- [x] GIF Walkthrough: 
  - <img src='XSS2.gif' title='User enumeration' width='' alt='' /> 
-- [ ] Steps to recreate: 
+- [x] Steps to recreate: 
+   "filename<img src=a onerror=alert(1)>.png"
 - [ ] Affected source code:
-- [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+- [Link 3](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-admin/includes/media.php)
 
 ## Assets
 
