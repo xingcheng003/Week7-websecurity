@@ -37,6 +37,7 @@ Time spent: **8** hours spent in total
 - [x] GIF Walkthrough: 
  - <img src='XSS2.gif' title='User enumeration' width='' alt='' /> 
 - [x] Steps to recreate: 
+  - Go to create a new media, upload a picture from your laptop. Then copy & paste the following code
     ```
     filename<img src=a onerror=alert(1)>.png
     ```
