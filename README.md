@@ -14,7 +14,7 @@ Time spent: **8** hours spent in total
 - [x] GIF Walkthrough: 
     - <img src='XSS.gif' title='XSS' width='' alt='' />
 - [x] Steps to recreate:
-    - Create a new post called example, and then put the code```<a onmouseover= "alert('I got you!')" >click here</a>``` in the content link. Finally click link to show message in the preview of post. 
+    - Create a new post called example, and then put the code```<a onmouseover= "alert('Hello word!')" >click here</a>``` in the content link. Finally click link to show message in the preview of post. 
 - [x] Affected source code:
 - [Link 1](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-includes/class-wp-editor.php?rev=33361)
 2. (Required) Vulnerability Name or ID: User Enumeration
